@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra Tribe Fashion — Products</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Terra Tribe Fashion home">
+        <span class="brand-name">Terra Tribe</span>
+        <span class="brand-tag">Fashion House</span>
+      </a>
+      <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="trustees.html">Trustees</a>
+        <a href="inquiries.html">Inquiries</a>
+        <a href="events.html">Events</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Page Header ────────────────────────────────────────── -->
+  <div class="page-header">
+    <div class="container">
+      <h1>The Collection</h1>
+      <p>Handcrafted luxury, rooted in African heritage</p>
+    </div>
+  </div>
+
+  <!-- ── Products ───────────────────────────────────────────── -->
+  <main class="section">
+    <div class="container">
+
+      <div class="search-wrap">
+        <label for="search-input" class="sr-only">Search products</label>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search products…"
+          aria-label="Search products"
+        />
+      </div>
+
+      <div id="no-results" role="status" aria-live="polite">
+        No products match your search.
+      </div>
+
+      <div class="product-grid" id="product-grid">
+
+        <div class="product-card" data-name="heritage line ankara blazer">
+          <div class="product-img-wrap">
+            <img
+              src="images/product1.jpg"
+              alt="Heritage Line Ankara Blazer"
+              onerror="handleProductImgError(this)"
+            />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Heritage Line Ankara Blazer</p>
+            <p class="product-price">&#8358;45,000</p>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-sm" onclick="window.location.href='inquiries.html'">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="indigo stillness adire maxi dress">
+          <div class="product-img-wrap">
+            <img
+              src="images/product2.jpg"
+              alt="Indigo Stillness Adire Maxi Dress"
+              onerror="handleProductImgError(this)"
+            />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Indigo Stillness Adire Maxi Dress</p>
+            <p class="product-price">&#8358;55,000</p>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-sm" onclick="window.location.href='inquiries.html'">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="clay & gold agbada set">
+          <div class="product-img-wrap">
+            <img
+              src="images/product3.jpg"
+              alt="Clay &amp; Gold Agbada Set"
+              onerror="handleProductImgError(this)"
+            />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Clay &amp; Gold Agbada Set</p>
+            <p class="product-price">&#8358;120,000</p>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-sm" onclick="window.location.href='inquiries.html'">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="sahara silk wrap top">
+          <div class="product-img-wrap">
+            <img
+              src="images/product4.jpg"
+              alt="Sahara Silk Wrap Top"
+              onerror="handleProductImgError(this)"
+            />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Sahara Silk Wrap Top</p>
+            <p class="product-price">&#8358;38,000</p>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-sm" onclick="window.location.href='inquiries.html'">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="palm weave handbag">
+          <div class="product-img-wrap">
+            <img
+              src="images/product5.jpg"
+              alt="Palm Weave Handbag"
+              onerror="handleProductImgError(this)"
+            />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Palm Weave Handbag</p>
+            <p class="product-price">&#8358;28,000</p>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-sm" onclick="window.location.href='inquiries.html'">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="midnight bead necklace">
+          <div class="product-img-wrap">
+            <img
+              src="images/product6.jpg"
+              alt="Midnight Bead Necklace"
+              onerror="handleProductImgError(this)"
+            />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Midnight Bead Necklace</p>
+            <p class="product-price">&#8358;15,000</p>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-sm" onclick="window.location.href='inquiries.html'">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p class="footer-brand">Terra Tribe Fashion</p>
+    <p class="footer-copy">&copy; 2026 Terra Tribe Fashion House. All rights reserved.</p>
+  </footer>
+
+  <script src="js/products.js"></script>
+</body>
+</html>

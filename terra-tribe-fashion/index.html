@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra Tribe Fashion — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Terra Tribe Fashion home">
+        <span class="brand-name">Terra Tribe</span>
+        <span class="brand-tag">Fashion House</span>
+      </a>
+      <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="trustees.html">Trustees</a>
+        <a href="inquiries.html">Inquiries</a>
+        <a href="events.html">Events</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Marquee Bar ─────────────────────────────────────────── -->
+  <div class="marquee-bar" role="region" aria-label="Upcoming events">
+    <div class="marquee-track" id="marquee-track">
+      <span class="marquee-item">Eko Luxe Season Preview — Tue, April 21, 2026 — Victoria Island, Lagos</span>
+      <span class="marquee-item">Lagos Runway Showcase Night — Fri, May 15, 2026 — Ikoyi, Lagos</span>
+      <span class="marquee-item">Abuja Couture Brunch — Sat, Sep 12, 2026 — Maitama, Abuja</span>
+      <span class="marquee-item">Year End Gala &amp; Awards — Sat, Dec 5, 2026 — CBD, Abuja</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item">Eko Luxe Season Preview — Tue, April 21, 2026 — Victoria Island, Lagos</span>
+      <span class="marquee-item">Lagos Runway Showcase Night — Fri, May 15, 2026 — Ikoyi, Lagos</span>
+      <span class="marquee-item">Abuja Couture Brunch — Sat, Sep 12, 2026 — Maitama, Abuja</span>
+      <span class="marquee-item">Year End Gala &amp; Awards — Sat, Dec 5, 2026 — CBD, Abuja</span>
+    </div>
+  </div>
+
+  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <section class="hero" aria-label="Hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Luxury. Craft. Identity.</p>
+        <h1>Terra Tribe Fashion</h1>
+        <p class="hero-sub">Rooted in Heritage. Dressed for the Future.</p>
+        <p class="hero-tagline">
+          African-inspired luxury fashion that honours the richness of the continent's
+          textile traditions — from hand-woven Adire to ornate Ankara — crafted into
+          timeless pieces built for the modern wardrobe.
+        </p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-primary">Explore Collection</a>
+          <a href="inquiries.html" class="btn btn-outline">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Intro ──────────────────────────────────────────────── -->
+  <section class="intro-section" aria-label="About Terra Tribe">
+    <div class="container">
+      <p>
+        Terra Tribe Fashion is a Lagos-born luxury label rooted in the belief that African
+        identity deserves its own couture language. Each piece bridges ancestral craft with
+        contemporary silhouette — designed for those who wear their story with pride.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Featured Pieces ────────────────────────────────────── -->
+  <section class="featured-section" aria-label="Featured pieces">
+    <div class="container">
+      <h2 class="section-title">Featured Pieces</h2>
+      <p class="section-subtitle">Selected from the current collection</p>
+
+      <div class="featured-grid">
+
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img
+              src="images/product1.jpg"
+              alt="Heritage Line Ankara Blazer"
+              onerror="handleProductImgError(this)"
+            />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Heritage Line Ankara Blazer</p>
+            <p class="product-price">&#8358;45,000</p>
+            <div class="product-actions">
+              <a href="inquiries.html" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img
+              src="images/product2.jpg"
+              alt="Indigo Stillness Adire Maxi Dress"
+              onerror="handleProductImgError(this)"
+            />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Indigo Stillness Adire Maxi Dress</p>
+            <p class="product-price">&#8358;55,000</p>
+            <div class="product-actions">
+              <a href="inquiries.html" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img
+              src="images/product3.jpg"
+              alt="Clay &amp; Gold Agbada Set"
+              onerror="handleProductImgError(this)"
+            />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Clay &amp; Gold Agbada Set</p>
+            <p class="product-price">&#8358;120,000</p>
+            <div class="product-actions">
+              <a href="inquiries.html" class="btn btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p class="footer-brand">Terra Tribe Fashion</p>
+    <p class="footer-copy">&copy; 2026 Terra Tribe Fashion House. All rights reserved.</p>
+  </footer>
+
+  <!-- ── Back to Top ────────────────────────────────────────── -->
+  <button id="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <script src="js/home.js"></script>
+</body>
+</html>
